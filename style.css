@@ -1,3 +1,10 @@
+.hh {
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+}
+
+
 #btn {
   display: flex;
   align-items: center;
@@ -30,4 +37,23 @@ button:hover svg {
 
 button:hover span {
   transform: translateX(7px);
+}
+
+
+@media (max-width: 991px) { /* Medium screens */
+  .hh {
+    font-size: 3.3em;
+  }
+}
+
+@media (max-width: 767px) { /* Small screens */
+  .hh {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 575px) { /* Extra small screens */
+  .hh {
+    font-size: 2em;
+  }
 }
