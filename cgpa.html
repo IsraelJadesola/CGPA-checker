@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="cgpa.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>CGPA Calculator</h1>
+        <p class="subtitle">Calculate your CGPA out of 5.0 and see your academic standing.</p>
+        <ul class="info-list">
+            <li>Enter your CGPA (0.00 - 5.00)</li>
+            <li>Click "Check CGPA" to see your result</li>
+            <li>CGPA System: 5.0 scale</li>
+        </ul>
+        <div class="input-group">
+            <label for="cgpaInput">Your CGPA:</label>
+            <input type="number" name="cgpaInput" id="cgpaInput" min="0" max="5" step="0.01" placeholder="e.g. 4.25">
+        </div>
+
+        <div style="justify-content: center; align-items: center; display: flex; margin-top: 1em;">
+            <!-- From Uiverse.io by ke1221 -->
+            <button onclick="checkBtn()">Check CGPA</button>
+
+        </div>
+
+        <div style="background-color: transparent; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+        width: 60%; margin: auto; border-radius: 10px; display: flex; justify-content: center; 
+        align-items: center; height: 5em; margin-top: 2em;">
+            <p id="cgpaDisplay"></p>
+        </div>
+    </div>
+    <footer>
+        <p>Powered by Eazy Software</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
